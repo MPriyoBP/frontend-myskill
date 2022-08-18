@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array dan perulangan dan Object</title>
+  </head>
+  <body>
+    <h1 style="text-transform: uppercase">ini adalah data mobil</h1>
+    <div id="showName"></div>
+    <script>
+      const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi", "Wuling"];
+      console.log(cars.length);
+
+      //   let text = "";
+      //   for (let i = 0; i < cars.length; i++) {
+      //     if (i === 1) {
+      //       text +=
+      //         `<div style="background: yellow">` + cars[i] + "</div>" + "<br>";
+      //     } else {
+      //       text +=
+      //         `<div style="background: cyan">` + cars[i] + "</div>" + "<br>";
+      //     }
+      //   }
+
+      const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi", "Wuling"];
+      const bikes = [
+        { name: "yamaha", price: "$100" },
+        { name: "suzuki", price: "$120" },
+      ];
+      const sepeda = {
+        nama: "wimcycle",
+        harga: "10000",
+      };
+
+      bikes.forEach((motor) => {
+        document.write(`<span>${motor.price} </span>`);
+        document.write(`<span>${motor.name} </span> <br/>`);
+      });
+      //   document.write(sepeda.nama);
+      //   document.write("<br>")
+      //   document.write(cars[0]);
+      document.getElementById("demo").innerHTML = text;
+
+      document.getElementById("showName").innerHTML = text;
+      console.log("ini hasil console log", cars);
+      console.log("HASIL CONSOLE LOG >>>>>", cars[7]);
+    </script>
+  </body>
+</html>
